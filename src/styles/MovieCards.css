@@ -1,0 +1,53 @@
+.moviecard-container {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+.moviecard-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+.moviecard {
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.moviecard:hover {
+    transform: translateY(-8px);
+  }
+
+.moviecard img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.addtofav,
+.removefromfav {
+    background-color: #1f2937;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .removefromfav:hover,
+  .addtofav:hover {
+    background-color: #0d131b;
+  }
+  
+  .removefromfav:active,
+  .addtofav:active {
+    transform: translateY(2px);
+  }
+
+

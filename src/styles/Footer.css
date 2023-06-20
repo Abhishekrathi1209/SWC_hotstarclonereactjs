@@ -1,0 +1,53 @@
+.homepagefooter {
+    background-color: transparent;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 125px;
+}
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 20px;
+}
+.footer1 ul{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.footer1 ul li {
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.connect ul{
+    display: flex;
+}
+.connect ul li{
+    margin: 10px;
+}
+.connect img{
+    height: 30px;
+    object-fit: cover;
+}
+.footer2 {
+    display: flex;
+    font-size: 10px;
+    padding-left: 40px;
+    justify-content: space-between;
+}
+.footer2 ul{
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    font-size: 10px;
+}
+.footer2 ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.appstore {
+    padding-right: 50px;
+}
+.appstore img {
+    margin-left: 15px;
+    width: 150px;
+}

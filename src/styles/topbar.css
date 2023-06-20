@@ -1,0 +1,22 @@
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+}
+
+.topheader img {
+    width: 110px;
+    padding: 0 20px;
+}
+
+.loginbutton{
+    color: black;
+    font-size: large;
+    margin-top: 20px;
+    margin-right: 50px;
+    height: 40px;
+    padding: 5px 40px;
+    cursor: pointer;
+}

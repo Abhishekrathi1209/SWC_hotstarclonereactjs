@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: "inter", "sans-serif";
+  }
+
+
+/* Styling of Movie Category*/
+
+.MovieCategory{
+    margin-top: 20px;
+    margin-left: 125px;
+}
+

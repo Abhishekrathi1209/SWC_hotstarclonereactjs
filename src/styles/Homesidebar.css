@@ -1,0 +1,30 @@
+.homepagesidebar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100px;
+}
+
+.sidebaricons {
+    list-style: none;
+    margin-top: 150px;
+    margin-left: 15px;
+}
+
+.sidebaricons li{
+    padding: 20px;
+}
+
+.sidebaricons li button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.sidebaricons li button img {
+    width: 30px;
+    height: auto;
+}
