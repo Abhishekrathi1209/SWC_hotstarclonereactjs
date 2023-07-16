@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/ImgSlider.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const ImageSlider = () => {
   const [movies, setMovies] = useState(null);
@@ -72,8 +72,10 @@ const ImageSlider = () => {
         <Slider {...settings}>
           {genres.map((genre, index) => (
             <div key={index} className="imgslider">
+              <Link to = {`/home/movie/${genremovielist[genre].id}/${genremovielist[genre].type}/${genremovielist[genre].title}`}>
               <img className="slider-image" src={genremovielist[genre].backgroundImg} alt={`Slide ${index + 1}`} />
               <img className="slider-title" src={genremovielist[genre].titleImg} alt={genremovielist[genre].title} />
+              </Link>
             </div>
           ))}
         </Slider>

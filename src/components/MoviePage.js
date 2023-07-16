@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import "../styles/MoviePage.css"
+import "../styles/MoviePage.css";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import MoviePageinfo from "./MoviePageInfo";
 
 const MoviePgae = () => {
 
-    const { id } = useParams()
+    const { id } = useParams();
 
     const [movie, setMovie] = useState(null);
     const [ispending, setIspending] = useState(true);
@@ -15,7 +15,7 @@ const MoviePgae = () => {
         fetch("http://localhost:8000/movies/" + id)
           .then((res) => {
             if (!res.ok) {
-              throw Error("Data nhi mila bhai");
+              throw Error("Unable to load Data");
             }
             return res.json();
           })

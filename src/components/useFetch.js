@@ -28,12 +28,6 @@ const useFetch = (url, category) => {
         })
     }, []);
 
-
-    // if(data) {
-    //     if(data["Coming of Age"]){
-    //         console.log("chl rha h bhai kr le use")
-    //     }
-    // }
     return {data, IsPending, error};
 }
  
